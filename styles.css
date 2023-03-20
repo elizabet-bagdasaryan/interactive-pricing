@@ -47,15 +47,16 @@ header h2{
   width:80vw;
   margin:auto;
   padding: 5vw;
- text-align: center;
- margin-top:100px;
- padding-bottom:50px
+  text-align: center;
+  margin-top:100px;
+  padding-bottom:50px
 
 }
 
 
-.slidecontainer {
+.slide-container {
   width: 100%;
+
 }
 
 .slider {
@@ -84,6 +85,7 @@ header h2{
   cursor: pointer;
   box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
 }
+
 /*
 .slider::-webkit-slider-thumb{
 -webkit-appearance: none;
@@ -114,12 +116,12 @@ box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
   margin-top:20px
 }
 
-.views h3{
+#followers{
 color:#848EAD;
 margin-bottom:30px
 }
 
-.month h1{
+#price{
   color:#293356;
   font-size:32px;
 }
@@ -246,6 +248,9 @@ hr{
   padding:15px 55px;
   font-weight:600;margin-top:30px
 }
+#price,#per-month{
+  display:none
+}
 
 @media screen and (min-width:768px){
   body{
@@ -255,6 +260,10 @@ hr{
     padding:0
    
   }
+  
+.slide-container {
+  margin:20px 0 50px 0
+}
 
   .curved-background {
     
@@ -285,7 +294,11 @@ hr{
   .card-component{
     width:700px;
     position: relative;
-    padding:0
+    padding:0;
+    padding-top:50px
+  }
+  #price,#per-month{
+    display:block
   }
 
  hr{
@@ -304,16 +317,23 @@ margin-left:0
   }
   .views{
     display: flex;
-    justify-content: space-between;
-    text-align: start;
-    padding-top:50px;
     padding-left:70px;
+  }
+  #per-month{
+    color:#848EAD;
+  font-weight:600;
+  margin:32px 0 0 10px
   }
   
   .month{
-    margin:-120px 0 150px 470px;
-    padding-right:70px
+   display:none
   }
+#followers{
+  margin-right:235px;
+  margin-top:30px
+}
+
+
 
   .discount-mob{
     display:none
