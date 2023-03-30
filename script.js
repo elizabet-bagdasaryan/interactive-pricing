@@ -4,51 +4,84 @@ const price = document.getElementById("price");
 const priceMob = document.getElementById("price-mob");
 const sliderToggle = document.querySelector(".toggle-button");
 const  toggle = document.querySelector(".toggle")
+const toggleButton = document.querySelector(".container")
 const track = document.getElementById("slider-track");
 
 slider.addEventListener("input", function () {
  
-  if (slider.value === "1") {
-    followers.innerHTML = "10K PAGEVIEWS";
-    price.innerHTML = " 8.00";
-    priceMob.innerHTML = " 8.00";
-  } else if (slider.value === "2") {
-    followers.innerHTML = "50K PAGEVIEWS";
-    price.innerHTML = " 12.00";
-    priceMob.innerHTML = "12.00";
-  } else if (slider.value === "3") {
-    followers.innerHTML = "100K PAGEVIEWS";
-    price.innerHTML = " 16.00";
-    priceMob.innerHTML = " 16.00";
-  } else if (slider.value === "4") {
-    followers.innerHTML = "500K PAGEVIEWS";
-    price.innerHTML = " 24.00";
-    priceMob.innerHTML = " 24.00";
-  } else if (slider.value === "5") {
-    followers.innerHTML = "1M PAGEVIEWS";
-    price.innerHTML = " 36.00";
-    priceMob.innerHTML = "36.00";
+  if(toggle.classList.contains("active") && slider.value ==="1"){
+    price.innerHTML = "6.00"
+    priceMob.innerHTML = "6.00"
+  }else if(toggle.classList.contains("active") && slider.value ==="2"){
+    price.innerHTML = "9.00"
+    priceMob.innerHTML = "9.00"
+  }else  if(toggle.classList.contains("active") && slider.value ==="3"){
+    price.innerHTML = "12.00"
+    priceMob.innerHTML = "12.00"
+  }else if(toggle.classList.contains("active") && slider.value ==="4"){
+    price.innerHTML = "18.00"
+    priceMob.innerHTML = "18.00"
+  }else if(toggle.classList.contains("active") && slider.value ==="5"){
+    price.innerHTML = "27.00"
+    priceMob.innerHTML = "27.00"
+  } else if(toggle.classList.contains("toggle") && slider.value ==="1"){
+    price.innerHTML = "8.00"
+    priceMob.innerHTML = "8.00"
+  } else if(toggle.classList.contains("toggle") && slider.value ==="2"){
+    price.innerHTML = "12.00"
+    priceMob.innerHTML = "12.00"
+  } else if(toggle.classList.contains("toggle") && slider.value ==="3"){
+    price.innerHTML = "16.00"
+    priceMob.innerHTML = "16.00"
+  } else if(toggle.classList.contains("toggle") && slider.value ==="4"){
+    price.innerHTML = "24.00"
+    priceMob.innerHTML = "24.00"
+  } else if(toggle.classList.contains("toggle") && slider.value ==="5"){
+    price.innerHTML = "36.00"
+    priceMob.innerHTML= "36.00"
   }
  
 });
 
 
-let finalPrice = 0;
 
 
-sliderToggle.addEventListener("click", function(){
+
+toggleButton.addEventListener("click", function(){
   toggle.classList.toggle("active")
-  if(toggle.classList.contains("active")){
-   finalPrice = parseInt(price.innerHTML);
-  price.innerHTML = (finalPrice / 100) * 75;
-  priceMob.innerHTML =(finalPrice / 100) * 75;}
-  else{
-  finalPrice = parseInt(price.innerHTML);
-  price.innerHTML = (finalPrice / 75) * 100;
-  priceMob.innerHTML =(finalPrice / 75) * 100;}
+  if(toggle.classList.contains("active") && slider.value ==="1"){
+    price.innerHTML = "6.00"
+    priceMob.innerHTML = "6.00"
+  }else if(toggle.classList.contains("active") && slider.value ==="2"){
+    price.innerHTML = "9.00"
+    priceMob.innerHTML = "9.00"
+  }else  if(toggle.classList.contains("active") && slider.value ==="3"){
+    price.innerHTML = "12.00"
+    priceMob.innerHTML = "12.00"
+  }else if(toggle.classList.contains("active") && slider.value ==="4"){
+    price.innerHTML = "18.00"
+    priceMob.innerHTML = "18.00"
+  }else if(toggle.classList.contains("active") && slider.value ==="5"){
+    price.innerHTML = "27.00"
+    priceMob.innerHTML = "27.00"
+  } else if(toggle.classList.contains("toggle") && slider.value ==="1"){
+    price.innerHTML = "8.00"
+    priceMob.innerHTML = "8.00"
+  } else if(toggle.classList.contains("toggle") && slider.value ==="2"){
+    price.innerHTML = "12.00"
+    priceMob.innerHTML = "12.00"
+  } else if(toggle.classList.contains("toggle") && slider.value ==="3"){
+    price.innerHTML = "16.00"
+    priceMob.innerHTML = "16.00"
+  } else if(toggle.classList.contains("toggle") && slider.value ==="4"){
+    price.innerHTML = "24.00"
+    priceMob.innerHTML = "24.00"
+  } else if(toggle.classList.contains("toggle") && slider.value ==="5"){
+    price.innerHTML = "36.00"
+    priceMob.innerHTML= "36.00"
   }
+   }
 )
-
 
 
 

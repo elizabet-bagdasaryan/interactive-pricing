@@ -398,6 +398,7 @@ margin-left:0
   background-color: #7AEADF;
  }
  .container{
-  margin-top:30px
+  margin-top:30px;
+  cursor:pointer
  }
 }
